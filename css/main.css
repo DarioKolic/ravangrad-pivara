@@ -231,7 +231,7 @@ select{
 }
 
 .shop-item{
-    margin-left: 50px;
+    margin: auto;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
