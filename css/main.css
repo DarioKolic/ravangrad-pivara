@@ -227,11 +227,11 @@ select{
 
 .shop-wrapper{
     display: grid;
+    grid-gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
 .shop-item{
-    margin: auto;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
