@@ -64,11 +64,7 @@ nav{
     background: #24572b;
 
 }
-.main-nav li:hover a{
 
-    color: #ffffff;
-
-}
 
 .main-nav-item:nth-child(2) ul{
     box-sizing: border-box;
@@ -90,8 +86,10 @@ nav{
     opacity: 1;
     display: block;
 }
+
 .main-nav-item:nth-child(2) ul > li{
     display: block;
+    color: rgb(61, 61, 61)
 }
 
 .main-nav-item:nth-child(3){
@@ -207,7 +205,7 @@ form.dest-form{
     margin-right: auto;
 }
 
-select{ 
+.dest-form > select{ 
     width: 200px;
     height: 50px;
     border: 0;
@@ -222,21 +220,83 @@ select{
     width: 80%;
     display: block;
 }
+/* shop filter */
+
+.form-filter{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-filter form{
+    display: block;
+    width: 100%;
+    margin-left: auto;
+}
+
+.form-filter form > select:nth-child(1){
+    height: 40px;
+    border-radius: 0;
+}
+
+.form-filter form > #search{
+    float: right;
+    height: 40px;
+    margin-left: auto;
+}
 
 /*shop*/
 
 .shop-wrapper{
+    width: 80%;
+    margin: auto;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
 .shop-item{
-    display:flex;
+    display:block;
+    margin-left: auto;
     flex-wrap: wrap;
     justify-content: center;
-    border: 1px solid gray;
+    border: 1px solid rgb(200, 200, 200);
+    font-family: 'Oswald', sans-serif;  
 }
 .shop-item img{
+    display:block;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
     width: 15%;
+}
+
+.shop-item div > h3{
+    margin-top: 25px;
+    text-align: center;
+}
+.shop-item div > p.small{
+    margin: 0;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.shop-item div > p{
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.shop-item button.order{
+    border: 0;
+    display: block;
+    margin: 0 auto 25px auto;
+    width: 200px;
+    height: 50px;
+    background: #24572b;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.shop-item button.order:hover,
+.shop-item button.order:focus{
+    background: #4cac58;
 }

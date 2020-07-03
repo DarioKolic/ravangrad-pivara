@@ -4,7 +4,6 @@
     <meta author="Dario Kolić">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/enter.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
@@ -12,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Source+Sans+Pro:wght@200&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Source+Sans+Pro:wght@200&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
 
     <title>Prodavnica - Ravangrad Pivara</title>
 </head>
@@ -33,22 +33,54 @@
             </ul>
         </nav>
     </header>
-    <main class="mar-100">
+    <main class="mar-150">
         
+        <div class="form-filter">
+            <form>
+                <select name="kategorija" id="kategorija">
+                    <option value="default" selected>Izaberite Kategoriju:</option>
+                    <option value="piva0330">Piva 0.33l</option>
+                    <option value="piva1000">Piva 1l</option>
+                </select>
+                <input id="search" type="text" placeholder="Pretraga">
+            </form>
+        </div>
+
         <div class="shop-wrapper">
 
                 <div class="shop-item">
                     <img src="img/png/honey-png.png" alt="">
                     <div>
-                        <h3></h3>
+                        <h3>Honey I'm Drunk</h3>
+                        <p class="small">DIPA</p>
+                        <p class="small">Minimum 12 kom. (4x4)</p>
+                        <p class="mar-50">Cena: ?</p>   
+                        <button class="order mar-25">Dodaj u Korpu</button>
                     </div>
+                    
                 </div>
                 <div class="shop-item">
                     <img src="img/png/odzacar-png.png" alt="">
+                    <div>
+                        <h3>Odzačar</h3>
+                        <p class="small">STOUT</p>
+                        <p class="small">Minimum 12 kom. (4x4)</p>
+                        <p class="mar-50">Cena: ?</p>
+                        <button class="order mar-25">Dodaj u Korpu</button>
+                    </div>
                 </div>
                 <div class="shop-item">
                     <img src="img/png/penalipa-png.png" alt="">
+                    <div>
+                        <h3>Penal-Ipa</h3>
+                        <p class="small">IPA</p>
+                        <p class="small">Minimum 12 kom. (4x4)</p>
+                        <p class="mar-50">Cena: ?</p>
+                        <button class="order ">Dodaj u Korpu</button>
+                        <p></p>
+                    </div>
                 </div>
+
 
         </div>
 
