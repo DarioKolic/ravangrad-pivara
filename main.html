@@ -21,9 +21,6 @@
 <!-- Website Content Section (Navigation, Content, Articles...) -->
 <header>
     <nav>
-        <div class="expand">
-            <i class="fas fa-list fa-5x"></i>
-        </div>
         <ul class="main-nav">
             <li class="main-nav-item"><a href="main.html">Početna</a></li>
             <li class="main-nav-item dropdown"><a href="#">Informacije</a>
@@ -39,7 +36,6 @@
 </header>
 
 <main class="mar-100">
-    <p id="showScroll"></p>
     <div class="welcome">
         <div>
             <h1>Dobrodošli u Ravangrad Pivaru</h1>
@@ -52,18 +48,29 @@
         </div>
         <img id="shop-img" src="img/undraw_shopping_app_flsj.svg" alt="">
     </div>
+
     <hr class="mar-50 hr-style">
-    <div class="slider-wrapper mar-50">
-        <img src="img/lokacije/akvas.jpg">
-        <img class="active" src="img/lokacije/desol.jpg">
-        <img src="img/lokacije/pivnica.jpg">
-        <img src="img/lokacije/bowling-st.jpg" alt="">
+
+    <h1 class="display-3 mar-150">Gde nas možete pronaći?</h1>
+
+    <div class="dest-wrapper mar-50">
+        <form id="dest-form">
+            <select name="grad" id="grad">
+                <option value="Sombor">Sombor</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+        </form>
+
+            <img class="dest" src="img/lokacije/akvas.jpg" alt="">
+
     </div>
-    <h1 class="text-center">De Sol</h1>
-    <p class="lead text-center">Kod Kanala</p>
-
-    
-
 </main>
 </div>
 

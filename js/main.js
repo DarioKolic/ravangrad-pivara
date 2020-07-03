@@ -14,12 +14,12 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-let lastSliderScroll = 110;
-let currentSliderScroll = 0;
+// Beer Destinations
 
-let slider = document.querySelector('div.slider-wrapper');
+let destForm = document.querySelector('#dest-form');
 
-slider.addEventListener('scroll', () => {
-    currentSliderScroll = slider.scrollWidth;
+//Add Destination
 
-})
+
+
+
