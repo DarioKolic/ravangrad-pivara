@@ -1,6 +1,12 @@
-/* body{
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
-} */
+body::-webkit-scrollbar{
+    display: none;
+}
 
 /* body::-webkit-scrollbar{
     display: none;
@@ -93,12 +99,19 @@ nav{
 }
 
 .main-nav-item:nth-child(3){
+    position: relative;
     display: block;
     margin-left: auto;
     margin-right: 20px;
     align-self: center;
     padding: 0;
     transform: scale(1.4);
+    transition: all 0.3 ease-in-out;
+}
+
+.fa-shopping-cart, .cart{
+    position: relative;
+    z-index: 9999;
 }
 
 li.main-nav-item.cart:hover{
@@ -299,4 +312,60 @@ form.dest-form{
 .shop-item button.order:hover,
 .shop-item button.order:focus{
     background: #4cac58;
+}
+
+/* Aside shop */
+.shop-aside{
+    position: absolute;
+    top: 66px;
+    left: 100%;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    background: #ffffff;
+    z-index: 1000;
+    transition: all 0.5s ease-in-out;
+}
+
+.shop-aside-card{
+    padding: 15px 0 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.shop-aside-card img{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 5%;
+}
+
+.shop-aside-card p{
+    display: inline;
+    font-size: 1.5rem;
+}
+
+.quantity{
+    display: inline-block; 
+    margin-left: 50px;
+}
+
+.shop-aside .add-to-item, .sub-to-item{
+    border: 1px solid #dddbdb;
+    background: #ffffff;
+    font-weight: 600;
+    width: 30px;
+    height: 30px;
+    transition: background 0.3s ease-in-out;
+}
+.shop-aside .add-to-item:hover, .sub-to-item:hover,
+            .add-to-item:focus, .sub-to-item:focus{
+                
+    background: #e0e0e0;
+}
+
+.shop-aside .shop-aside-q{
+    border: 1px solid #dddbdb;
+    height: 30px;
+    width: 60px;
+    text-align: center;
 }
