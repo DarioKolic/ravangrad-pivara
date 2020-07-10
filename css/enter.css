@@ -1,9 +1,3 @@
-@media only screen and (max-width: 600px){
-    .enter-verify{
-        opacity: 0;
-    }
-}
-
 body{
     margin: 0;
     padding: 0;
@@ -133,5 +127,10 @@ button{
 @media only screen and (max-width: 375px){
     #img-header{
         width: 45%;
+    }
+
+    .enter-verify{
+        background: transparent;
+        height: 100px;
     }
 }
