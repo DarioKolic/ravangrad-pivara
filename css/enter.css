@@ -138,7 +138,8 @@ button{
 
     .enter-verify{
         background: transparent;
-        height: 10%;
+        margin-top: 5vh;
+        height: 10vh;
     }
     #img-let{
         top: 85%;
