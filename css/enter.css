@@ -124,13 +124,24 @@ button{
     }
 }
 
+@media only screen and (max-width: 512px){
+    .enter-verify{
+        background: transparent;
+        height: 10%;
+    }
+}
+
 @media only screen and (max-width: 375px){
     #img-header{
-        width: 45%;
+        width: 45%;s
     }
 
     .enter-verify{
+        margin-top: 10%;
         background: transparent;
-        height: 100px;
+        height: 10%;
+    }
+    #img-let{
+        top: 85%;
     }
 }
