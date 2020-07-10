@@ -27,7 +27,10 @@ let addBtn = document.querySelector('.add-to-item');
 let subBtn = document.querySelector('.sub-to-item');
 
 let inputQuantity = document.querySelector('.shop-aside-q');
+
 let shopToggler = true;
+
+
 
 shopCart.addEventListener('click', () => {
 
@@ -51,4 +54,4 @@ console.log(shop);
 
 let shopList = Array.from(shop.children);
 
-console.log(shopList[2].tagName('h1'))
+console.log(shopList[2])
