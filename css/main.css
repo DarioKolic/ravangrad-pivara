@@ -3,11 +3,6 @@ body{
     padding: 0;
     overflow-x: hidden;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    -webkit-scroll-behavior: smooth;
-    -moz-scroll-behavior: smooth;
-    -o-scroll-behavior: smooth;
-    -ms-scroll-behavior: smooth;
-    scroll-behavior: smooth;
 }
 body::-webkit-scrollbar{
     display: none;
