@@ -48,8 +48,9 @@ body > .enter-wrapper > #img-bg{
 }
 .enter-verify h1 > span{
     font-weight: 100;
-    font-size: 1.6em;
+    font-size: 1.8em;
     color: #24572b;
+    font-family: 'Oswald', sans-serif; ;
 }
 
 button{
