@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     max-height: 100vh;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .enter-wrapper{
@@ -63,7 +64,7 @@ button{
 
 #btn-yes{
     text-decoration: none;
-    margin-top: 50px;
+    margin-top: 25px;
     background: #24572b;
     border: 0;
     height: 50px;
@@ -109,10 +110,10 @@ button{
         display: none;
     }
     h1{
-        font-size: 28px;
+        font-size: 3em;
     }
     h1 > span{
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
     #img-header{
         width: 25%;
@@ -123,12 +124,25 @@ button{
     #img-header{
         width: 35%;
     }
+    .enter-verify{
+        background: transparent;
+        /* height: 40vh; */
+    }
 }
 
 @media only screen and (max-width: 512px){
     .enter-verify{
         background: transparent;
-        height: 10%;
+        /* height: 20vh; */
+    }
+    h1{
+        font-size: 20px;
+    }
+    h1 > span{
+        font-size: 0.8em;
+    }
+    #img-let{
+        top: 85%;
     }
 }
 
@@ -139,10 +153,6 @@ button{
 
     .enter-verify{
         background: transparent;
-        margin-top: 5vh;
-        height: 10vh;
-    }
-    #img-let{
-        top: 85%;
+        /* height: 15vh; */
     }
 }

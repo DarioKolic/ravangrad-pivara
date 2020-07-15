@@ -44,14 +44,14 @@ const addBtn = document.querySelector('.add-to-item');
 const subBtn = document.querySelector('.sub-to-item');
 const para = document.querySelector('.shop-aside p');
 const orderBtn = document.querySelectorAll('.order');
-const quantityTemp = document.querySelector('.quantity')
+const quantity = document.querySelector('.quantity');
 
 const inputQuantity = document.querySelector('.shop-aside-q');
 
 let storeAddInfo = '';
+let storeShopItem = [];
 
 let shopToggler = true;
-
 
 orderBtn.forEach((item, index) => {
     item.addEventListener('click', () => {
@@ -64,11 +64,21 @@ orderBtn.forEach((item, index) => {
             asideShop.style.left = "70%";
             shopToggler = false;
         }
-        let test = document.createElement('H1');
+        const test = document.createElement('P');
+        const shopAsideDiv = document.createElement('DIV');
+        const shopAsideDivQ = document.createElement('DIV');
+        const quantityChild = quantity.children;
+        const quantityItems = Array.from(quantityChild);
+        shopAsideDivQ.setAttribute('class', 'quantity');
+        quantityItems.forEach(item => {
+            shopAsideDivQ.append(item);
+        })
+        shopAsideDiv.setAttribute('class', 'shop-aside-card');
         test.innerHTML = storeAddInfo.textContent;
-        asideShop.append(test);
-        asideShop.append(quantity);
-
+        shopAsideDiv.append(test);
+        shopAsideDiv.append(shopAsideDivQ);
+        asideShop.append(shopAsideDiv);
+        storeShopItem = asideShop.children;
     });
 })
 

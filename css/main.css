@@ -325,6 +325,8 @@ form.dest-form{
 }
 
 /* Aside shop */
+.quantity{
+}
 .shop-aside{
     position: fixed;
     top: 60px;
@@ -380,7 +382,9 @@ form.dest-form{
     text-align: center;
 }
 
-
+.hide{
+    display: none;
+}
 @media only screen and (max-width: 600px){
 
     #shop-img{
