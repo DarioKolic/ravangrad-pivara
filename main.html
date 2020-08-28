@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6f561f35ef.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -15,69 +14,128 @@
     <title>Ravangrad Pivara - Prvo Somborsko Zanatsko Pivo</title>
 </head>
 <body>
-    <div class="shop-aside">
-        <div class="shop-aside-card">
-            <img src="" width="5%" alt="">
-            <p></p>
-        </div>
-    </div>
-    
 <!-- Website Content Section (Navigation, Content, Articles...) -->
 <header>
-    <nav>
-        <ul class="main-nav">
-            <li class="main-nav-item active"><a href="main.html">Početna</a></li>
-            <li class="main-nav-item dropdown"><a href="#">Informacije</a>
-            <ul class="nav-dropdown">
-                <li><a href="#">Naša Piva</a></li>
-                <li><a href="#">O našem pivu</a></li>
-                <li><a href="#">Kolaboracije</a></li>
-                <li><a href="#dest">Gde nas možete pronaći?</a></li>
-            </ul></li>
-            <li class="main-nav-item"><a href="prodavnica.html">Prodavnica</a></li>
-            <li class="main-nav-item cart"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-        </ul>
-    </nav>
+        <div class="nav-info">
+            <button class="expand"><i class="fas fa-bars fa-2x barStyle"></i></button>
+            <span class="logo"><img src="img/logo-use.png" alt=""></span>
+            <span class="rightP phone"><a href="tel:+381066480150">(call)</a></span>
+        </div>
+            <nav class="toExpand">
+                <ul id='nav'>
+                    <li class="nav-b-len"><a href="#">Početna</a></li>
+                    <li class="nav-b-len"><a href="#">Informacije</a></li>
+                    <li class="nav-b-len"><a href="#">Prodavnica</a></li>
+                </ul>
+            </nav>
+        
+
 </header>
 
-<main class="mar-100">
-    <div class="welcome">
-        <div>
-            <h1>Dobrodošli u Ravangrad Pivaru</h1>
-            <p class="lead">Pivo za Poneti ili Doneti!</p>
-
-            <p class="order">Naruči odmah</p>
-            <a href="prodavnica.html">
-                <button id="order-btn">Prodavnica</button>
-            </a>
+<main>
+    
+        <div class="welcome">
+            <div id="w1" class="wlc-i"></div>
+            <div id="w2" class="wlc-i"></div>
+            <div id="w3" class="wlc-i"></div>
         </div>
-        <img id="shop-img" src="img/undraw_shopping_app_flsj.svg" alt="">
+
+    <div id="div-d">
+        <img id="try" src="img/round-ravangrad.png" alt="">
+        <img id="dobrodosli" src="img/rvngd-enter-let.png" alt="">
+        <div id="d-text-wrapper">
+        <p class="d-text">"Ravangrad Pivara" je prva kraft pivara najzelenijeg grada Srbije, Sombora. Grad sa bogatom tradicijom I kulturom sada ima nesto novo da ponudi.
+            
+            </p>
+        </div>
+    </div>
+    <div class="slider-container">
+        <div class="ctrl arrow-left"><i class="fas fa-angle-left fa-5x"></i></div>
+        <div class="ctrl arrow-right"><i class="fas fa-angle-right fa-5x"></i></div>
+        <div class="slider">
+            <img class="slider-item active" src="img/png/1.png" alt="Beer Bottle">
+        </div>
+        <div class="slider-text-content active">
+            <h1 class="text-item">Red Ale</h1>
+            <p class="text-item">Red Ale 5%</p>
+            
+            <i class="fa fa-beer fa-2x" aria-hidden="true"></i>
+            <p class="text-item description">Prvo somborsko zanatsko pivo namenjeno ljubiteljima piva koji se prvi put susrecu sa kraft pivom.
+                Odlikuje ga blaga karamelna nota od przenog slada koja mu isto vreme daje I tamniju, crvenu boju. Umerene je gorcine I laganog tela.
+                </p>
+        </div>
     </div>
 
-    <hr class="mar-50 hr-style">
+    <div class="break">
+        <p class="d-text" style="color: #ffffff">Proizvodnja se obavlja pomoću moderne tehnologije ali na tradicionalan način koristeci samo ječam, hmelj, kvasac I vodu sa izuzetkom dodavanja našeg domaćeg meda u određena sezonska piva. 
+        </p>
+        <i class="far fa-check-circle fa-2x"></i>
+    </div>
+    <h1 id="kolab">Kolaboracije</h1>
+    <div class="kolaboracije slide-in">
+        <div class="left">
+            <h2>Discont DIY</h3>
+            <p><small>5%</small></p>
+            <p class="kolab-text">- Napravljeno u saradnji sa samoorganizovanim prostorom Diskont DIY cija je namena povezivanje ljudi iz razlicitih svera drustva putem muzike I druge nezavisne scene.
+            </p>
+        </div>
+        <div class="right">
+            <h2>Škripa Pub</h3>
+            <p><small>6.2%</small></p>
+            <p class="kolab-text">
 
-    <h1 class="mar-150" id="dest">Gde nas možete pronaći?</h1>
+                Pivo skuvano specijalo za  4.rodjendan Skripa PUBa, jednog od prvih kraft pabova Novog Sada,
+                nakon cega je po zelji publike uvrsceno u redovnu ponudu kao pivo kuce!
 
-    <div class="dest-wrapper mar-50">
+            </p>
+        </div>
+    </div>
+    <hr>
+    <h1 id="dest">Gde nas možete pronaći?</h1>
+    <div id="gnmp" class="dest-wrapper mar-50">
         <form id="dest-form">
             <select name="grad" id="grad">
-                <option value="Sombor">Sombor</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+                <option value="default">Izaberite Grad</option>
+                <option name="beograd" value="new google.maps.LatLng(44.821127, 20.453597)">Beograd</option>
+                <option name="noviSad" value="new google.maps.LatLng(45.254988, 19.845157)">Novi Sad</option>
+                <option name="sombor" value= "new google.maps.LatLng(45.772919, 19.115536)">Sombor</option>
+                <option name="subotica" value="new google.maps.LatLng(46.102380, 19.662141)">Subotica</option>
+                <option name="becej" value="new google.maps.LatLng(45.615292, 20.048913)">Bečej</option>
+                <option name="crvenka" value="new google.maps.LatLng(45.659767, 19.456587)">Crvenka</option>
+            </select>
+            <select name="store" id="store">
+                <option value="default">Izaberite Lokal</option>
             </select>
         </form>
 
-            <img class="dest" src="img/lokacije/akvas.jpg" alt="">
-
     </div>
+
+    <div class="map"></div>
+
+    <footer>
+        <div class="social">
+            <a href=""><i class="fab fa-facebook-square fa-3x"></i></a>
+            <a href=""><i class="fab fa-instagram-square fa-3x"></i></a>
+        </div>
+        <div class="contact">
+            <h1 class="hKontakt">Kontakt</h1>
+            <form action="php/config.php" method="POST" id="kontakt">
+                <input id="imePrezime" name="imePrezime" type="text" placeholder="Ime i Prezime" required>
+                <input id="email" name="email" type="email" placeholder="E-Mail Adresa" required>
+                <button type="submit">Submit?</button>
+            </form>
+            <p>Sva polja su obavezna!</p>
+        </div>
+    </footer>
+
 </main>
-</div>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBW09y7iDsJ7u5Q0aKAxDYgtVE1h7XGpQY&callback=initMap&libraries=places&v=weekly"
+      defer>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

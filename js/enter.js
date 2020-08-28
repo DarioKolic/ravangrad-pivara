@@ -18,7 +18,8 @@ animBtn.addEventListener('click', () => {
 
     verifyAnim.style.opacity = 0;
     imgAnimOpacity.style.opacity = 0;
-    letAnim.style.top = '38%';
+    letAnim.style.top = '50%';
     letAnim.style.width = '90%';
 
 });
+
