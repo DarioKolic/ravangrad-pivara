@@ -248,30 +248,28 @@ main{
 }
 /* ---------- Dobrodosli ----------- */
 
-
 #div-d{
     display: grid;
-
+    width: 100%;
     position: relative;
-    padding: 20px;
     box-shadow: 0 5px 20px 5px rgb(150, 150, 150);
     margin-bottom: 50px;
+    justify-content: center;
+    padding-bottom: 20px;
 }   
 
 #try{
     position: absolute;
-    top: -41.5%;
     color: #ffffff;
-    transform: translateY(25%);
     z-index: 1;
+    height: 60%;
     justify-self: center;
-    height: 70%;
-    
+    top: -15%;
 }
 #dobrodosli{
     font-family: 'Funkturm', sans-serif;
     display: block;
-    margin-top: 250px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 35px;
@@ -300,7 +298,7 @@ main{
 }
 
 .slide-in{
-    opacity: 0;
+    opacity: 1;
 }
 
 .left{

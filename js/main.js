@@ -156,8 +156,8 @@ window.addEventListener('scroll', () => {
 
     slideIn.forEach(el => {
 
-        let elHeight = el.scrollHeight;
-        let elPosTop = el.offsetTop - bg2.scrollHeight - bg.scrollHeight + 200;
+        let elHeight = el.offsetHeight;
+        let elPosTop = el.offsetTop - bg2.offsetHeight - bg.offsetHeight + 200;
         let elPosBot = elPosTop + elHeight;
         
         const onScroll = () => {
