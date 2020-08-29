@@ -164,7 +164,7 @@ window.addEventListener('scroll', () => {
             console.log("radi")
             let scrollBottomPos = scrollY;
                 console.log(elPosTop, elPosBot, elHeight, scrollBottomPos)
-                if(scrollBottomPos > elPosTop && scrollBottomPos < elPosBot){
+                if(scrollY > elPosTop && scrollY < elPosBot){
                     console.log('SUCC')
                     el.classList.add('fade-in');
                 }
