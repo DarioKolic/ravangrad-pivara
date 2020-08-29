@@ -159,12 +159,11 @@ window.addEventListener('scroll', () => {
         let elHeight = el.scrollHeight;
         let elPosTop = el.offsetTop - bg2.scrollHeight - bg.scrollHeight + 200;
         let elPosBot = elPosTop + elHeight;
-
+        
         const onScroll = () => {
-            let scroll = scrol++;
             let scrollBottomPos = scrollY;
                 console.log(elPosTop, elPosBot, elHeight, scrollBottomPos)
-                if(scroll > elPosTop && scroll < elPosBot){
+                if(pageYOffset > elPosTop && pageYOffset < elPosBot){
                     console.log('SUCC')
                     el.classList.add('fade-in');
                 }
