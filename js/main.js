@@ -161,7 +161,7 @@ window.addEventListener('scroll', () => {
         let elPosBot = elPosTop + elHeight;
 
         const onScroll = () => {
-            console.log("success")
+            console.log("success :)")
             let scrollBottomPos = scrollY;
                 console.log(elPosTop, elPosBot, elHeight, scrollBottomPos)
                 if(scrollY > elPosTop && scrollY < elPosBot){
