@@ -151,23 +151,29 @@ window.addEventListener('scroll', () => {
     let bg = document.querySelector('.welcome');
     let bg2 = document.querySelector('#div-d');
 
-    console.log(bg.clientHeight)
+    console.log(bg.offsetHeight)
+
 
     slideIn.forEach(el => {
+
         let elHeight = el.clientHeight;
-        let elPosTop = el.offsetTop - bg2.clientHeight - bg.clientHeight;
+        let elPosTop = el.offsetTop - bg2.offsetHeight - bg.offsetHeight + 200;
         let elPosBot = elPosTop + elHeight;
-        window.addEventListener('scroll', (e) => {
+
+        const onScroll = () => {
+
             let scrollBottomPos = scrollY;
-            console.log(elPosTop, elPosBot, elHeight, scrollBottomPos)
-            if(scrollBottomPos > elPosTop && scrollBottomPos < elPosBot){
-            el.children[0].classList.add('fade-in');
-            el.children[1].classList.add('fade-in');
-            el.classList.add('fade-in');
+                console.log(elPosTop, elPosBot, elHeight, scrollBottomPos)
+                if(scrollBottomPos > elPosTop && scrollBottomPos < elPosBot){
+                    console.log('SUCC')
+                    el.classList.add('fade-in');
+                }
         }
 
+        window.addEventListener('scroll', onScroll)
+        window.addEventListener('touchmove', onScroll)
     })
-    })
+    
 
     let map;
     let info;
