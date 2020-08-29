@@ -161,7 +161,7 @@ window.addEventListener('scroll', () => {
         let elPosBot = elPosTop + elHeight;
 
         const onScroll = () => {
-
+            console.log("radi")
             let scrollBottomPos = scrollY;
                 console.log(elPosTop, elPosBot, elHeight, scrollBottomPos)
                 if(scrollBottomPos > elPosTop && scrollBottomPos < elPosBot){
@@ -169,9 +169,10 @@ window.addEventListener('scroll', () => {
                     el.classList.add('fade-in');
                 }
         }
-
-        window.addEventListener('scroll', onScroll)
         window.addEventListener('touchmove', onScroll)
+        window.addEventListener('scroll', onScroll)
+        window.addEventListener('onscroll', onScroll)
+        
     })
     
 
