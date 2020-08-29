@@ -22,4 +22,3 @@ animBtn.addEventListener('click', () => {
     letAnim.style.width = '90%';
 
 });
-

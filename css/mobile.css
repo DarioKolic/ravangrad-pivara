@@ -60,6 +60,7 @@
     #dobrodosli{
         margin-top: 150px;
     }
+    
 
 }
 
@@ -90,9 +91,10 @@
 }
 
 /* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
+@media (max-width: 999.98px) { 
 
-    
+
+
 
 }
 

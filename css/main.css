@@ -579,10 +579,10 @@ form#dest-form{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
     height:80%;
-    width: 80%;
+    width: 100%;
     transition: 1s all ease-in-out;
+    border-bottom: 3px solid rgb(39, 39, 39);
 }
 
 .loc-btn{
@@ -632,21 +632,23 @@ form#dest-form{
 /*footer*/
 
 footer{
-    height: 50vh;
+    overflow: hidden;
+    box-shadow: 0 10px 50px 5px rgb(0, 0, 0);
+    height: 50%;
     width: 100%;
     background: rgb(39, 39, 39);
-    display: grid;
+    position: relative;
+    z-index:1;  
     grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
 }
 
 .hKontakt{
     font-family: "Quicksand";
-    font-size: 48px;
-    letter-spacing: 6px;
-    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: 3px;
+    color: rgb(39, 39, 39);
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin: 25px;
 }
 
 #kontakt{
@@ -672,7 +674,9 @@ footer{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    cursor: pointer;
+    cursor: text;
+    caret-color: #ffffff;
+    color: #ffffff;
     transition: border 0.3s ease-in-out;
 }
 
@@ -696,8 +700,8 @@ footer{
     height: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0;
-    cursor: pointer;
+    margin-bottom: 30px;
+    cursor: text;
     transition: border 0.3s ease-in-out;
 }
 
@@ -706,11 +710,50 @@ footer{
     font-weight: 600;
 }
 
-.contact > p{
+#msg{
+    background: white;
+    color: rgb(39, 39, 39);
+    font-family: "Quicksand";
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    border-radius: 0;
+    border: 0;
+    border: 1px solid rgb(39, 39, 39);
+    width: 300px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    cursor: text;
+    transition: border 0.3s ease-in-out;
+}
+
+
+#kontakt > p{
     font-family: "Quicksand";
     font-weight: 400;
-    color: #ffffff;
+    color: rgb(39, 39, 39);
     text-align: center;
+}
+
+#subBtn{
+    outline: 0;
+    border: 0;
+    display: block;
+    font-family: "Quicksand";
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    background: #e0e0e0;
+    transition: background 0.3s ease;
+}
+#subBtn:hover{
+    background: #aaaaaa;
 }
 /*shop*/
 

@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta author="Dario Kolić">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -112,21 +112,22 @@
 
     <div class="map"></div>
 
-    <footer>
+        <div class="contact">
+            <h1 class="hKontakt">Kontaktirajte nas</h1>
+            <form action="php/config.php" method="POST" id="kontakt">
+                <input id="imePrezime" name="imePrezime" type="text" placeholder="Ime i Prezime" required>
+                <input id="email" name="email" type="email" placeholder="E-Mail Adresa" required>
+                <textarea id="msg" name="message" cols="40" rows="5" placeholder="Vaša Poruka"></textarea>
+                <p>Sva polja su obavezna!</p>
+                <button id="subBtn" type="submit">Pošalji</button>
+            </form>
+        </div>
+        <footer>
         <div class="social">
             <a href=""><i class="fab fa-facebook-square fa-3x"></i></a>
             <a href=""><i class="fab fa-instagram-square fa-3x"></i></a>
         </div>
-        <div class="contact">
-            <h1 class="hKontakt">Kontakt</h1>
-            <form action="php/config.php" method="POST" id="kontakt">
-                <input id="imePrezime" name="imePrezime" type="text" placeholder="Ime i Prezime" required>
-                <input id="email" name="email" type="email" placeholder="E-Mail Adresa" required>
-                <button type="submit">Submit?</button>
-            </form>
-            <p>Sva polja su obavezna!</p>
-        </div>
-    </footer>
+        </footer>
 
 </main>
 

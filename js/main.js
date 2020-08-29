@@ -73,10 +73,8 @@ const controls = (el, direction, callback) => {
     let c = setInterval(callback, 3000);
     container.addEventListener('mouseover', e => {
         clearInterval(c);
-        console.log(c)
     })
     container.addEventListener('mouseleave', e => {
-        console.log('left')
         c = setInterval(callback, 3000);
     })
     el.addEventListener('click', e => {
@@ -265,9 +263,12 @@ window.addEventListener('scroll', () => {
         });
       }
 
-// CAROUSEL ->
-
-
+const msg = document.querySelector('#msg');
+console.log(msg);
+      
+    msg.addEventListener('keyup', e => {
+          console.log(e.key)
+    })
 
 
 
