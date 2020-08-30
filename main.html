@@ -117,15 +117,25 @@
             <form action="php/config.php" method="POST" id="kontakt">
                 <input id="imePrezime" name="imePrezime" type="text" placeholder="Ime i Prezime" required>
                 <input id="email" name="email" type="email" placeholder="E-Mail Adresa" required>
-                <textarea id="msg" name="message" cols="40" rows="5" placeholder="Vaša Poruka"></textarea>
+                <textarea id="msg" name="message" cols="40" rows="5" maxlength="150" placeholder="Vaša Poruka"></textarea>
+                <label for="msg"><small id="lmsg">150 karaktera preostalo.</small></label>
                 <p>Sva polja su obavezna!</p>
                 <button id="subBtn" type="submit">Pošalji</button>
             </form>
         </div>
         <footer>
         <div class="social">
-            <a href=""><i class="fab fa-facebook-square fa-3x"></i></a>
-            <a href=""><i class="fab fa-instagram-square fa-3x"></i></a>
+            <div>
+                <a href=""><i class="fab fa-facebook-square fa-3x"></i></a>
+                <a href=""><i class="fab fa-instagram-square fa-3x"></i></a>
+            </div>
+            <p>ravangradpivara@gmail.com</p>
+            <br>
+            <p>PIB: 110110459</p>
+            <p>MB: 64658298</p>
+            <p>tel: 066 / 480 150</p>
+            <br>
+            <p>Ravangrad Pivara <i class="fa fa-copyright" aria-hidden="true"></i> 2020 - Developed by <a href="https://www.linkedin.com/in/dario-kolic-2092881ab/">Dario Kolić</a></p>
         </div>
         </footer>
 

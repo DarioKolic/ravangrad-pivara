@@ -264,10 +264,19 @@ window.addEventListener('scroll', () => {
       }
 
 const msg = document.querySelector('#msg');
-console.log(msg);
+const lmsg = document.querySelector('#lmsg');
+let max = 150;
       
     msg.addEventListener('keyup', e => {
-          console.log(e.key)
+        if((max - e.target.value.length) === 0){
+            lmsg.textContent = `Dostignuta dozvoljena granica od ${max} karaktera!`
+            lmsg.style.color = '#690000';
+            lmsg.style.fontWeight = '600';
+        }else{
+            lmsg.textContent = `${max - e.target.value.length} karaktera preostalo.`
+            lmsg.style.color = 'rgb(39, 39, 39)';
+            lmsg.style.fontWeight = '400';
+        }
     })
 
 
