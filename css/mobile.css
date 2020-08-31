@@ -67,9 +67,13 @@
     }
     #w1{
         width: 100%;
-        background-size: cover;
-        background-position-y: 100%;
+        background-size: 100%;
+        background-position-y: 140%;
     }
+    #dest{
+        font-size: 26px;
+    }
+
 }
 
 @media (min-width: 576px) { 

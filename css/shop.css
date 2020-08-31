@@ -1,0 +1,46 @@
+.construction{
+    padding-top: 10%;
+    padding-bottom: 20%;
+    width: 100%;
+}
+.fa-hard-hat{
+    display: inline-block;
+    width: 100%;
+    color: #24572b;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    animation: hat;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.construction > h1{
+    display: block;
+    text-align: center;
+    font-family: "Quicksand";
+    font-size: 48px;
+    letter-spacing: 3px;
+    color: rgb(39, 39, 39);
+}
+
+@media (max-width: 575.98px){
+    .construction{
+        padding-top: 20%;
+
+    }
+    .construction > h1{
+        font-size: 28px;
+    }
+}
+
+@keyframes hat {
+    0%{
+        transform: translateX(0);
+    }33.33%{
+        transform: translateX(-50px);
+    }66.66%{
+        transform: translateX(50px);
+    }100%{
+        transform: translateX(0);
+    }
+}

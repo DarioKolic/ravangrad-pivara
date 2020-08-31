@@ -154,8 +154,7 @@ html{
         background: #24572b;
         border-radius: 20px;
         margin-right: 15px;
-        width: 100px;
-        line-height: 30px;
+        width: 120px;
         text-align: center;
         height: 30px;
         color: white;
@@ -166,6 +165,10 @@ html{
         text-decoration: none;
     }
 
+    .fa-phone{
+        display:block;
+        margin-top: 5px;
+    }
 
 /* ---------- Welcome ---------- */
 
@@ -323,12 +326,14 @@ main{
     position: absolute;
     top: 50%;
     left: 10%;
+    cursor: pointer;
     transform: translateY(-50%)
 }
 .arrow-right{
     position: absolute;
     top: 50%;
     left: 80%;
+    cursor: pointer;
     transform: translateY(-50%)
 }
 
@@ -921,4 +926,3 @@ footer{
         width: 30%;
     }
 }
-

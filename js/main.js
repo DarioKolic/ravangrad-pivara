@@ -4,10 +4,6 @@ let name = '';
 
 // Navigation - Hide on Scroll
 
-const expand = document.querySelector('.expand');
-const navExpand = document.querySelector('.toExpand');
-const navHeight = navExpand.clientHeight;
-let toggler = false;
 
 
 const slider = document.querySelector('.slider');
@@ -112,26 +108,6 @@ controls(control[1], 'right', () => {
     getSetText(piva, slideItems, slideText);
     slideItems.classList.add('active');
 });
-
-navExpand.setAttribute('data-expand', 'false');
-
-expand.addEventListener('click', (e) => {
-    if(!toggler){
-        navExpand.style.height = '0px';
-        toggler = true;
-    }else{
-        navExpand.style.height = `${navHeight}px`
-        toggler = false;
-    }
-})
-
-if(navExpand.getAttribute('data-expand') !== 'true'){
-    navExpand.style.height = '0px';
-    toggler = true;
-}else{
-    navExpand.style.height = `${navHeight}px`;
-    toggler = false;
-}
 
 let wlcm = document.querySelector('wlcmContainer');
 let size = document.body.clientHeight

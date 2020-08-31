@@ -2,102 +2,60 @@
 <head>
     <meta charset="UTF-8">
     <meta author="Dario Kolić">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/shop.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6f561f35ef.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Source+Sans+Pro:wght@200&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Source+Sans+Pro:wght@200&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
-    <title>Prodavnica - Ravangrad Pivara</title>
+    <title>Ravangrad Pivara - Prvo Somborsko Zanatsko Pivo</title>
 </head>
 <body>
-        <div class="quantity hide">
-            <button class="add-to-item">+</button>
-            <input class="shop-aside-q" type="text" value="0">
-            <button class="sub-to-item">-</button>
+<!-- Website Content Section (Navigation, Content, Articles...) -->
+<header>
+        <div class="nav-info">
+            <button class="expand"><i class="fas fa-bars fa-2x barStyle"></i></button>
+            <span class="logo"><img src="img/logo-use.png" alt=""></span>
+            <a class="rightP phone" href="tel:+381066480150"><i class="fa fa-phone" aria-hidden="true"></i></a>
         </div>
-    <div class="shop-aside">
-        <div class="shop-aside-card">
-            <h1>Vasa Korpa (test)</h1>
-        </div>
+            <nav class="toExpand">
+                <ul id='nav'>
+                    <li class="nav-b-len"><a href="main.html">Početna</a></li>
+                    <li class="nav-b-len"><a href="prodavnica.html">Prodavnica</a></li>
+                </ul>
+            </nav>
+</header>
+
+<main>
+    
+    <div class="construction">
+        <i class="fas fa-hard-hat fa-7x"></i>
+        <h1>Prodavnica u pripremi!</h1>
     </div>
 
-    <!-- Website Content Section (Navigation, Content, Articles...) -->
-    <header class='mar-250'>
-        <nav>
-            <ul class="main-nav">
-                <li class="main-nav-item"><a href="main.html">Početna</a></li>
-                <li class="main-nav-item dropdown"><a href="#">Informacije</a>
-                <ul class="nav-dropdown">
-                    <li><a href="#">Naša Piva</a></li>
-                    <li><a href="#">O našem pivu</a></li>
-                    <li><a href="#">Kolaboracije</a></li>
-                    <li><a href="#">Gde nas možete pronaći?</a></li>
-                </ul></li>
-                <li class="main-nav-item active"><a href="prodavnica.html">Prodavnica</a></li>
-                <li class="main-nav-item cart"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main id="container" class="mar-150">
-        
-        <div class="form-filter">
-            <form>
-                <select name="kategorija" id="kategorija">
-                    <option value="default" selected>Izaberite Kategoriju:</option>
-                    <option value="piva0330">Piva 0.33l</option>
-                    <option value="piva1000">Piva 1l</option>
-                </select>
-                <input id="search" type="text" placeholder="Pretraga">
-            </form>
+        <footer>
+        <div class="social">
+            <div>
+                <a href="https://www.facebook.com/ravangradpivara/"><i class="fab fa-facebook-square fa-3x"></i></a>
+                <a href="https://www.instagram.com/ravangradpivara/"><i class="fab fa-instagram-square fa-3x"></i></a>
+            </div>
+            <p>ravangradpivara@gmail.com</p>
+            <br>
+            <p>PIB: 110110459</p>
+            <p>MB: 64658298</p>
+            <p>tel: 066 / 480 150</p>
+            <br>
+            <p>Ravangrad Pivara <i class="fa fa-copyright" aria-hidden="true"></i> 2020 - Developed by <a href="https://www.linkedin.com/in/dario-kolic-2092881ab/">Dario Kolić</a></p>
         </div>
+        </footer>
 
-        <div class="shop-wrapper">
-
-                <div class="shop-item">
-                    <img src="img/png/honey-png.png" alt="">
-                    <div>
-                        <h3>Honey I'm Drunk</h3>
-                        <p class="small">DIPA</p>
-                        <p class="small">Minimum 12 kom. (4x4)</p>
-                        <p class="mar-50">Cena: ?</p>   
-                        <button class="order mar-25">Dodaj u Korpu</button>
-                    </div>
-                    
-                </div>
-                <div class="shop-item">
-                    <img src="img/png/odzacar-png.png" alt="">
-                    <div>
-                        <h3>Odzačar</h3>
-                        <p class="small">STOUT</p>
-                        <p class="small">Minimum 12 kom. (4x4)</p>
-                        <p class="mar-50">Cena: ?</p>
-                        <button class="order mar-25">Dodaj u Korpu</button>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <img src="img/png/penalipa-png.png" alt="">
-                    <div>
-                        <h3>Penal-Ipa</h3>
-                        <p class="small">IPA</p>
-                        <p class="small">Minimum 12 kom. (4x4)</p>
-                        <p class="mar-50">Cena: ?</p>
-                        <button class="order mar-25">Dodaj u Korpu</button>
-                        <p></p>
-                    </div>
-                </div>
-
-
-        </div>
-
-    </main>
-    <script src="js/main.js"></script>
+</main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
-
