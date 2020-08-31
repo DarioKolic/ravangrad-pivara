@@ -68,10 +68,11 @@
     #w1{
         width: 100%;
         background-size: 100%;
-        background-position-y: 140%;
+        background-position-y: -50%;
     }
     #dest{
         font-size: 26px;
+        letter-spacing: 2px;
     }
 
 }
