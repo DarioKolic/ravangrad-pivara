@@ -136,7 +136,7 @@ html{
         display: block;
         align-self: center;
     }
-    .logo > img{
+    #brand{
         display: block;
         height: 50%;
         margin-left: auto;
