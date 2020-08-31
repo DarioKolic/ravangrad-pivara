@@ -125,8 +125,6 @@ window.addEventListener('scroll', () => {
     let bg = document.querySelector('.welcome');
     let bg2 = document.querySelector('#div-d');
 
-    console.log(bg.offsetHeight)
-
 
     slideIn.forEach(el => {
 
@@ -136,9 +134,7 @@ window.addEventListener('scroll', () => {
         
         const onScroll = () => {
             let scrollBottomPos = scrollY;
-                console.log(elPosTop, elPosBot, elHeight, scrollBottomPos)
                 if(pageYOffset > elPosTop && pageYOffset < elPosBot){
-                    console.log('SUCC')
                     el.classList.add('fade-in');
                 }
         }
@@ -167,7 +163,6 @@ window.addEventListener('scroll', () => {
     let cityCenter;
     selOpt.addEventListener('input', e => {
         if(e.target.value !== 'default'){
-            console.log(eval(e.target.value))
             cityCenter = eval(e.target.value);
             map = new google.maps.Map(document.querySelectorAll(".map")[0], {
                 center: cityCenter,
@@ -186,7 +181,7 @@ window.addEventListener('scroll', () => {
                 storeLoc.appendChild(storeElement);
             }
         }else{
-            console.log("error")
+            console.log("Error finding location! Error: Status: 404 Not Found")
         }
 
     })
@@ -205,13 +200,12 @@ window.addEventListener('scroll', () => {
                 if(status === google.maps.places.PlacesServiceStatus.OK){
                     for(let i = 0; i<results.length; i++){
                         createMarker(results[0]);
-                        console.log(results)
                     }
                     map.setCenter(results[0].geometry.location)
                     map.panTo(results[0].geometry.location)
                     map.setZoom(19)
                 }else{
-                    console.log('error')
+                    console.log('Error finding places! Error: Status: 404 Not Found')
                 }
             });
         }
