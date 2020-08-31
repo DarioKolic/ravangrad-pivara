@@ -25,11 +25,11 @@
 
 @media (max-width: 575.98px){
     .construction{
-        padding-top: 20%;
-
+        padding-top: 50%;
+        padding-bottom: 60%;
     }
     .construction > h1{
-        font-size: 28px;
+        font-size: 22px;
     }
 }
 
