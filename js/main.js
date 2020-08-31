@@ -22,18 +22,18 @@ const piva = [
         naziv: "Red Ale",
         vrsta: "Red Ale",
         procenat: 5,
-        opis: "Prvo somborsko zanatsko pivo namenjeno ljubiteljima piva koji se prvi put susrecu sa kraft pivom. Odlikuje ga blaga karamelna nota od przenog slada koja mu isto vreme daje I tamniju, crvenu boju. Umerene je gorcine I laganog tela."
+        opis: "Prvo somborsko zanatsko pivo namenjeno ljubiteljima piva koji se prvi put susreću sa kraft pivom. Odlikuje ga blaga karamelna nota od prženog slada koja mu isto vreme daje I tamniju, crvenu boju. Umerene je gorčine I laganog tela."
     },
     {
         id: 1,
         naziv: "Honey",
         vrsta: "DIPA",
         procenat: 8,
-        opis: "Sa dodatkom meda iz lokalnog pčelinjaka, koji se tu našao kako bi podigao procenat alkohola i da pivu kompleksniji ukus. Preovladjuju prijatne hmeljne note kako u ukusu tako i u mirisu."
+        opis: "Sa dodatkom meda iz lokalnog pčelinjaka, koji se tu našao kako bi podigao procenat alkohola i da pivu kompleksniji ukus. Preovlađuju prijatne hmeljne note kako u ukusu tako i u mirisu."
     },
     {
         id: 2,
-        naziv: "Odzacar",
+        naziv: "Odžačar",
         vrsta: "Stout",
         procenat: 5.5,
         opis: "Crno pivo dobijeno korišćenjem 5 vrsta prženih ječmenih sladova od kojih, pored izrazito crne boje, dobija i bogatu aromu kafe, čokolade i karamele."

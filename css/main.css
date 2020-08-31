@@ -182,7 +182,7 @@ html{
     content: '';
     height: 50vh;
     width: 100%;
-    background: rgba(39, 39, 39, 0.6);
+    background: rgba(39, 39, 39, 0.7);
 
 }
 
@@ -200,11 +200,9 @@ html{
     background: url("../img/djrav.jpg");
     background-size: 50%;
     background-position-y: 30%;
-    background-position-x: ;
     background-attachment: fixed;
     height: 100%;
     width: 50%;
-    border-left: 1px solid #ffffff;
 }
 
 
@@ -324,7 +322,7 @@ main{
 .arrow-left{
     position: absolute;
     top: 50%;
-    left: 15%;
+    left: 10%;
     transform: translateY(-50%)
 }
 .arrow-right{
@@ -363,7 +361,7 @@ main{
 }
 .slider-item{
     position: absolute;
-    opacity: 0;
+    display: block;
     height: inherit;
     align-self: center;
     transition: opacity 0.5s ease-in-out;
